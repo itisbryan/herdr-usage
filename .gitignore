@@ -1,0 +1,8 @@
+# Runtime state written by the plugin
+history.json
+lastgood.json
+.env
+
+# Local/editor files
+.DS_Store
+node_modules/

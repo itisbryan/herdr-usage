@@ -1,0 +1,22 @@
+id = "herdr-usage"
+name = "AI Usage"
+version = "0.1.0"
+min_herdr_version = "0.7.0"
+description = "Live rate-limit / quota for Claude, Codex, and OpenCode (opencode.ai)"
+platforms = ["linux", "macos", "windows"]
+
+# Popup modal. Open with `herdr plugin pane open --plugin herdr-usage --entrypoint panel`
+[[panes]]
+id = "panel"
+title = "AI Usage"
+placement = "popup"
+width = 74
+height = 20
+command = ["node", "usage.mjs"]
+
+# Action so the panel is reachable from the workspace menu and a keybinding.
+[[actions]]
+id = "show"
+title = "Show AI usage"
+contexts = ["workspace"]
+command = ["node", "usage.mjs"]
