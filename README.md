@@ -4,6 +4,8 @@ A zero-dependency [Herdr](https://herdr.dev) plugin that displays live quota and
 
 The plugin reads provider-native or local usage data, renders compact progress bars, keeps the last successful rate-limit response as a fallback when a provider is temporarily unavailable, and records a small local history so the panel can show a short trend.
 
+![AI usage panel](assets/ai-usage-panel.png)
+
 ## Features
 
 - Claude Code OAuth quota: 5-hour, weekly, and Fable windows when available.
